@@ -1,0 +1,49 @@
+- title: "RIT Sailing Club Website"
+  subtitle: "Sailing @ RIT"
+  link: "https://sail.rhosoft.co/"
+  image: "/thumbs/rit_sailing.jpg"
+
+- title: "Save Olympic Strays"
+  subtitle: "All Animals Deserve a Chance"
+  link: "https://saveolympicstrays.com/"
+  image: "/thumbs/sos_thumb.jpg"
+
+- title: "Rhosoft"
+  subtitle: "The Other Website"
+  link: "http://rhosoft.co/"
+  image: "/thumbs/rhosoft.jpg"
+
+- title: "HealthNet"
+  subtitle: "Keep your Hospital Organized"
+  link: "https://health.rhosoft.co/"
+  image: "/thumbs/health-thumb.jpg"
+
+- title: "Music Remote"
+  subtitle: "Control Your Device From Anywhere"
+  link: "http://rhosoft.co/musicremote/"
+  image: "/thumbs/musicremote.png"
+
+- title: "Visualizer"
+  subtitle: "Cool Graphics | Universal Control"
+  link: "http://rhosoft.co/visualizer/"
+  image: "/thumbs/visualizer.jpg"
+
+- title: "APlusPhysics"
+  subtitle: "The Community in the Palm of Your Hand"
+  link: "http://rhosoft.co/physics/"
+  image: "/thumbs/aplusphysics.jpg"
+
+- title: "Period Widget"
+  subtitle: "A Friend for any Student"
+  link: "http://rhosoft.co/pwidget/"
+  image: "/thumbs/pwidget.jpg"
+
+- title: "WIRQ Automation"
+  subtitle: "The WIRQ's Robot DJ"
+  link: "http://rhosoft.co/wirq/"
+  image: "/thumbs/wirq.jpg"
+
+- title: "Infopreserve Mobile"
+  subtitle: "Intelligent Document Management"
+  link: "http://rhosoft.co/infomobile/"
+  image: "/thumbs/infopreserve.jpg"

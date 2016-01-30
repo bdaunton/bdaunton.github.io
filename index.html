@@ -1,0 +1,28 @@
+---
+layout: default
+title: Gareth Daunton
+---
+
+<!-- One -->
+	<section id="one">
+		<header class="major">
+			<h2>Hello, I'm Gareth</h2>
+		</header>
+		<h3>I am a Sailing Fanatic, Software Engineering Student and Software Developer.</h3>
+		<p>My studies take place at the Rochester Institute of Technology which is located in Rochester, NY.</br>
+			While I am a full time student, I have also found time to persue both personal and commercial projects.</p>
+	</section>
+
+<!-- Two -->
+	<section id="two">
+		<h2>My Work:</h2>
+		<div class="row">
+			{% for project in site.data.projects %}
+				<article class="6u 12u$(xsmall) work-item">
+					<a href="{{project.link}}" class="image fit thumb"><img src="{{project.image}}" alt="" /></a>
+					<h3>{{project.title}}</h3>
+					<p>{{project.subtitle}}</p>
+				</article>
+			{% endfor %}
+		</div>
+	</section>
