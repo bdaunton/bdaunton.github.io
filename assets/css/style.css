@@ -216,6 +216,7 @@ svg {
   text-transform: uppercase;
   font-size: 12px;
   text-align: center;
+  text-decoration: none;
 }
 
 .button:hover {
