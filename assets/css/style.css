@@ -368,6 +368,10 @@ section {
     flex-wrap: wrap;
   }
 
+  .projects-wrapper .item .middle {
+    flex-wrap: wrap;
+  }
+
   header .heading .icons {
     margin: .25em 0!important;
   }
