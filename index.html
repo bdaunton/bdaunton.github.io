@@ -5,7 +5,9 @@ title: Gareth Daunton
 <div class="projects-wrapper">
 	{% for project in site.data.projects %}
 	<div class="item">
-		<img src="{{project.image}}"/>
+		<div class="image-wrapper" style="background-image: url({{project.image}});">
+			<img src="{{project.image}}" style="opacity:0;"/>
+		</div>
 		<div class="middle">
 			<div class="text">
 				<h1>{{project.title}}</h1>
