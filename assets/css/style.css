@@ -247,7 +247,6 @@ section {
   .projects-wrapper .item .image-wrapper {
     margin: 15px 0;
     position: relative;
-    box-shadow: 0 0 8px 8px #36597A inset;
     background-position: center;
     background-size: cover;
   }
