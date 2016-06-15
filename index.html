@@ -2,6 +2,22 @@
 layout: default
 title: Gareth Daunton
 ---
+<h1 class="title">POSITIONS</h1>
+<div class="projects-wrapper">
+	{% for pos in site.data.jobs %}
+	<div class="item">
+		<img src="{{pos.image}}" class="image"/>
+		<div class="middle">
+			<div class="text">
+				<h1>{{pos.company}}</h1>
+				<h3>{{pos.title}}</h3>
+			</div>
+			<p class="type">{{pos.term}}</p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<h1 class="title">PROJECTS</h1>
 <div class="projects-wrapper">
 	{% for project in site.data.projects %}
 	<div class="item">
