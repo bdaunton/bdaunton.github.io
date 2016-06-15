@@ -1,8 +1,20 @@
+---
+---
+$primary-font-stack: 'Raleway', sans-serif;
+$secondary-font-stack: 'Source Code Pro', sans-serif;
+$font-color: #fff;
+$selection-color: #ffb7b7;
+$primary-color: #36597A;
+$secondary-color: #f8f8f8;
+$button-text-hover: #1d1d1d;
+$background-image: '/assets/images/background.jpg';
+
+
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: $selection-color;
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: $selection-color;
 }
 
 html {
@@ -11,7 +23,7 @@ html {
   top: 0;
   left: 0;
   position: absolute;
-  background: #36597A;
+  background: $primary-color;
   color: #fff;
 }
 
@@ -20,23 +32,50 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: $primary-font-stack;
 }
 
 header {
-    position: relative;
-    width: 100%;
-    height: 110%;
-    background-image: url('/assets/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  position: relative;
+  width: 100%;
+  height: 110%;
+  background-image: url($background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header:before {
+  background: $primary-color;
+  opacity: .6;
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header:after {
+  content: ' ';
+  background: -webkit-linear-gradient(transparent, $primary-color); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, $primary-color); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, $primary-color); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, $primary-color);
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  z-index: 1;
 }
 
 header .wrapper {
   height: 90%;
   margin-bottom: 10%;
   position: relative;
+  z-index: 2;
 }
 
 header .heading {
@@ -92,7 +131,7 @@ header .heading {
   }
 
   header .heading .icons a i.fa{
-    color: #f8f8f8;
+    color: $secondary-color;
     -webkit-transition: opacity .5s;
     -moz-transition: opacity .25s;
     -ms-transition: opacity .25s;
@@ -120,7 +159,7 @@ svg {
   bottom: 35px;
   padding-left: 7px;
   z-index: 2;
-  color: #f8f8f8;
+  color: $secondary-color;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -135,10 +174,10 @@ svg {
   transition: opacity .5s;
 }
 .scroll.icon .stroke {
-  stroke: #f8f8f8;
+  stroke: $secondary-color;
 }
 .scroll.icon .scroller {
-  fill: #f8f8f8;
+  fill: $secondary-color;
   -webkit-animation: updown .75s 4;
   -moz-animation: updown .75s 4;
   -o-animation: updown .75s 4;
@@ -204,14 +243,14 @@ svg {
 /* --- BUTTON --- */
 
 .button {
-  border: solid 2px #fff;
+  border: solid 2px $font-color;
   background-color: transparent;
   -webkit-transition: background-color .1s linear;
   -moz-transition: background-color .1s linear;
   -ms-transition: background-color .1s linear;
   -o-transition: background-color .1s linear;
   transition: background-color .1s linear;
-  color: #fff;
+  color: $font-color;
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 12px;
@@ -220,8 +259,8 @@ svg {
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #1d1d1d;
+  background-color: $font-color;
+  color: $button-text-hover;
   cursor: pointer;
 }
 /* --- PROJECTS --- */
@@ -242,7 +281,7 @@ section {
     border-bottom: 1px solid rgba(130,130,130,.25);
     display: flex;
     align-items: center;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: $secondary-font-stack;
   }
 
   .projects-wrapper .item .image-wrapper {
@@ -270,7 +309,7 @@ section {
     height: 100%;
     z-index: 2;
     opacity: .4;
-    background: #36597A;
+    background: $primary-color;
   }
 
   .projects-wrapper .item .text > *{
