@@ -3,4 +3,7 @@ name: Gareth Daunton
 collections:
 - projects
 
+sass:
+    sass_dir: _scss
+
 markdown: kramdown
