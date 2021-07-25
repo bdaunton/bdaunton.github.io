@@ -17,21 +17,3 @@ title: Gareth Daunton
 	</div>
 	{% endfor %}
 </div>
-<h1 class="title">PROJECTS</h1>
-<div class="projects-wrapper">
-	{% for project in site.data.projects %}
-	<div class="item">
-		<div class="image-wrapper" style="background-image: url({{project.image}});">
-			<img src="{{project.image}}" style="opacity:0;"/>
-		</div>
-		<div class="middle">
-			<div class="text">
-				<h1>{{project.title}}</h1>
-				<h3>{{project.subtitle}}</h3>
-			</div>
-			<p class="type">{{project.type}}</p>
-		</div>
-		<a href="{{project.link}}" class="button">View</a>
-	</div>
-	{% endfor %}
-</div>
